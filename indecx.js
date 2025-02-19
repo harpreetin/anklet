@@ -10,6 +10,7 @@ const client = new Client({
   }),
   puppeteer: {
     headless: true,
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || "/usr/bin/google-chrome-stable", // Use Railway-compatible Chromium
     args: [
       "--no-sandbox",
       "--disable-setuid-sandbox",
