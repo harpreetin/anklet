@@ -8,27 +8,15 @@
     "canvas": "^2.9.0",
     "sharp": "^0.32.0",
     "puppeteer": "^21.6.1",
-"puppeteer-core": "^21.6.1"
-
+    "puppeteer-core": "^21.6.1"
   },
   "scripts": {
-  "start": "node indecx.js"
-},
-"dependencies": {
-  "whatsapp-web.js": "^1.23.0",
-  "qrcode-terminal": "^0.12.0",
-  "canvas": "^2.9.0",
-  "sharp": "^0.32.0",
-  "puppeteer": "^21.6.1"
-},
-"engines": {
-  "node": "18.x"
-},
-"puppeteer": {
-  "defaultExecutablePath": "/usr/bin/chromium"
+    "start": "node indecx.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "puppeteer": {
+    "defaultExecutablePath": "/usr/bin/chromium"
+  }
 }
-
-
-
-
-
