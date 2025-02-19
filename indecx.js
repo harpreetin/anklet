@@ -10,7 +10,7 @@ const client = new Client({
   }),
   puppeteer: {
     headless: true,
-    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || "/usr/bin/google-chrome-stable", // Use Railway-compatible Chromium
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined, // Use bundled Chromium
     args: [
       "--no-sandbox",
       "--disable-setuid-sandbox",
@@ -24,6 +24,7 @@ const client = new Client({
     ],
   },
 });
+
 
 client.on("qr", (qr) => {
   qrcode.generate(qr, { small: true });
